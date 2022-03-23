@@ -1,0 +1,26 @@
+﻿<Window x:Class="AutoDaoqingZhou.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoDaoqingZhou"
+        xmlns:sys="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+        mc:Ignorable="d"
+        Title="道庆洲自动化" Height="200" Width="400">
+    <StackPanel >
+        <StackPanel.Resources>
+            <sys:Thickness x:Key="defaultMargin">5</sys:Thickness>
+            <sys:Thickness x:Key="buttonMargin">5</sys:Thickness>
+        </StackPanel.Resources>
+        <StackPanel Orientation="Horizontal" Margin="{StaticResource defaultMargin}">
+            <Label>最值保留小数位数</Label>
+            <TextBox Width="100" Name="DigitsHoldTextBox">3</TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="{StaticResource defaultMargin}">
+            <Button Click="AutoProcessing_Click" Margin="{StaticResource buttonMargin}">自动处理</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="{StaticResource defaultMargin}">
+            <Button Click="Test_Click" Margin="{StaticResource buttonMargin}">测试用按钮</Button>
+        </StackPanel>
+    </StackPanel  >
+</Window>
